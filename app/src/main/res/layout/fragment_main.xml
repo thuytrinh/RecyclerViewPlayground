@@ -20,4 +20,14 @@
       android:layout_margin="@dimen/activity_horizontal_margin"
       android:background="@null"
       android:src="@drawable/circle" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#c8009688"
+      android:padding="@dimen/activity_horizontal_margin"
+      android:text="Hello RecyclerView"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:textColor="@android:color/white" />
 </RelativeLayout>

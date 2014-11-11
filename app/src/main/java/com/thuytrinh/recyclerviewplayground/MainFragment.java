@@ -23,6 +23,7 @@ public class MainFragment extends Fragment {
   @Override
   public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
     final View imageButton = view.findViewById(R.id.imageButton);
+    final View textView = view.findViewById(R.id.textView);
 
     final float hideLevel = 150f;
     final float showLevel = 0f;
@@ -43,7 +44,11 @@ public class MainFragment extends Fragment {
       public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
         scrollY += dy;
 
+        float newTranslationY = textView.getTranslationY() - dy;
+        textView.setTranslationY(Math.min(0f, Math.max(newTranslationY, -textView.getHeight())));
+
         if (Math.abs(dy) > THRESHOLD) {
+
           boolean isUp = dy < 0;
           if (isUp) {
             if (imageButton.getTranslationY() != showLevel) {
