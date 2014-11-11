@@ -48,7 +48,6 @@ public class MainFragment extends Fragment {
         textView.setTranslationY(Math.min(0f, Math.max(newTranslationY, -textView.getHeight())));
 
         if (Math.abs(dy) > THRESHOLD) {
-
           boolean isUp = dy < 0;
           if (isUp) {
             if (imageButton.getTranslationY() != showLevel) {
