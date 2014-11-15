@@ -17,7 +17,7 @@ public class SampleDataAdapter extends RecyclerView.Adapter<SampleViewHolder> {
 
   @Override
   public SampleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_view, parent, false);
+    View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_item, parent, false);
     return new SampleViewHolder(itemView);
   }
 
