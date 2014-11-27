@@ -1,4 +1,4 @@
-package com.thuytrinh.recyclerviewplayground;
+package com.thuytrinh.recyclerviewplayground.fragment;
 
 import android.animation.ObjectAnimator;
 import android.app.Fragment;
@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
+
+import com.thuytrinh.recyclerviewplayground.R;
+import com.thuytrinh.recyclerviewplayground.adapter.ItemsAdapter;
 
 public class MainFragment extends Fragment {
   public static final int THRESHOLD = 5;
@@ -36,7 +39,7 @@ public class MainFragment extends Fragment {
 
     RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
     recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-    recyclerView.setAdapter(new SampleDataAdapter());
+    recyclerView.setAdapter(new ItemsAdapter());
     recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
       public int scrollY;
 

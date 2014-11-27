@@ -1,33 +1,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.thuytrinh.recyclerviewplayground.MainFragment">
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.thuytrinh.recyclerviewplayground.fragment.MainFragment">
 
   <view
-      android:id="@+id/recyclerView"
-      class="android.support.v7.widget.RecyclerView"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent" />
+    android:id="@+id/recyclerView"
+    class="android.support.v7.widget.RecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
 
   <ImageButton
-      android:id="@+id/imageButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
-      android:layout_alignParentEnd="true"
-      android:layout_alignParentRight="true"
-      android:layout_margin="@dimen/activity_horizontal_margin"
-      android:background="@null"
-      android:src="@drawable/circle" />
+    android:id="@+id/imageButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@null"
+    android:src="@drawable/circle" />
 
   <TextView
-      android:id="@+id/textView"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:background="#c8009688"
-      android:padding="@dimen/activity_horizontal_margin"
-      android:text="Hello RecyclerView"
-      android:textAppearance="?android:attr/textAppearanceMedium"
-      android:textColor="@android:color/white" />
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c8009688"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:text="Hello RecyclerView"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="@android:color/white" />
 </RelativeLayout>
